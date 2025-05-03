@@ -3,9 +3,9 @@
 CURRENT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # shellcheck disable=1090
-source "${CURRENT_DIR}/scripts/helpers.sh"
+source "${CURRENT_DIR}/scripts/tmux-core.sh"
 
-flow_status="#(${CURRENT_DIR}/scripts/flow.sh)"
+flow_status="#(${CURRENT_DIR}/scripts/tmux-flow.sh)"
 flow_status_pattern="\#{flow_status}"
 
 tmux_interpolate() {
