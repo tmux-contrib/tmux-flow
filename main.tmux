@@ -16,12 +16,12 @@
 #   @flow_break_icon   - Icon for break phase (default: "")
 #   @flow_session_icon - Icon for focus session (default: "")
 
-CURRENT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+_tmux_flow_root_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-# shellcheck source=scripts/core.sh
-source "${CURRENT_DIR}/scripts/core.sh"
+# shellcheck source=scripts/tmux_flow_core.sh
+source "$_tmux_flow_root_dir/scripts/tmux_flow_core.sh"
 
-flow_status="#(${CURRENT_DIR}/scripts/tmux-flow.sh)"
+flow_status="#($_tmux_flow_root_dir/scripts/tmux_flow.sh)"
 flow_status_pattern="\#{flow_status}"
 
 # Interpolate the flow status pattern in content.

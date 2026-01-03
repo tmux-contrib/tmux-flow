@@ -20,11 +20,11 @@
 # Dependencies:
 #   - macos/tmux-flow.scpt: AppleScript to query Flow app
 
-CURRENT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PLUGIN_DIR="$(dirname "$CURRENT_DIR")"
+_tmux_flow_source_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+_tmux_flow_plugin_dir="$(dirname "$_tmux_flow_source_dir")"
 
-# shellcheck source=scripts/core.sh
-source "${CURRENT_DIR}/core.sh"
+# shellcheck source=tmux_flow_core.sh
+source "$_tmux_flow_source_dir/tmux_flow_core.sh"
 
 # Main entry point for the Flow status script.
 #
@@ -46,7 +46,7 @@ main() {
 
 	opt_break_icon="$(tmux_get_option "@flow_break_icon" "")"
 	opt_session_icon="$(tmux_get_option "@flow_session_icon" "")"
-	content="$("${PLUGIN_DIR}/macos/tmux-flow.scpt")"
+	content="$("$_tmux_flow_plugin_dir/macos/tmux-flow.scpt")"
 
 	content="${content/Flow/$opt_session_icon}"
 	content="${content/Break/$opt_break_icon}"
