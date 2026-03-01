@@ -1,6 +1,6 @@
 # tmux-flow
 
-A tmux plugin that displays the [Flow](https://flowapp.info/) pomodoro timer status in the status bar.
+Display [Flow](https://flowapp.info/) pomodoro timer status in your tmux status bar.
 
 ## Dependencies
 
