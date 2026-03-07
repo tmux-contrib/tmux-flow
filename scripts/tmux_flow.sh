@@ -17,8 +17,8 @@ main() {
 	local opt_break_icon
 	local opt_session_icon
 
-	opt_break_icon="$(_tmux_get_option "@flow_break_icon" "")"
-	opt_session_icon="$(_tmux_get_option "@flow_session_icon" "")"
+	opt_break_icon="$(_tmux_get_option "@flow-break-icon" "")"
+	opt_session_icon="$(_tmux_get_option "@flow-focus-icon" "")"
 	content="$("$(dirname "$_tmux_flow_source_dir")/macos/tmux-flow.scpt")"
 
 	content="${content/Flow/$opt_session_icon}"

@@ -18,24 +18,24 @@ And install it by running `<prefix> + I`.
 
 ## Usage
 
-Add the `#{flow_status}` format string to your status bar:
+Add the `#{flow}` format string to your status bar:
 
 ```tmux
-set -g status-right "#{flow_status} | %H:%M"
+set -g status-right "#{flow} | %H:%M"
 ```
 
 ## Configuration
 
-| Option                | Default | Description                   |
-|-----------------------|---------|-------------------------------|
-| `@flow_session_icon`  | `""`    | Icon for focus sessions       |
-| `@flow_break_icon`    | `""`    | Icon for break periods        |
+| Option              | Default | Description                   |
+|---------------------|---------|-------------------------------|
+| `@flow-focus-icon`  | `""`    | Icon for focus sessions       |
+| `@flow-break-icon`  | `""`    | Icon for break periods        |
 
 ### Format Strings
 
-| Format String    | Description                           |
-|------------------|---------------------------------------|
-| `#{flow_status}` | Current Flow phase and remaining time |
+| Format String | Description                           |
+|---------------|---------------------------------------|
+| `#{flow}`     | Current Flow phase and remaining time |
 
 ## Development
 

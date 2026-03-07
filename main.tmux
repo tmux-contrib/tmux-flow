@@ -13,7 +13,7 @@ _tmux_flow_root="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "$_tmux_flow_root/scripts/tmux_core.sh"
 
 flow_status="#($_tmux_flow_root/scripts/tmux_flow.sh)"
-flow_status_pattern="\#{flow_status}"
+flow_status_pattern="\#{flow}"
 
 _tmux_interpolate() {
 	local content=$1
