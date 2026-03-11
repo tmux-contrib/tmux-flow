@@ -1,5 +1,7 @@
 # tmux-flow
 
+[![Test](https://github.com/tmux-contrib/tmux-flow/actions/workflows/test.yml/badge.svg)](https://github.com/tmux-contrib/tmux-flow/actions/workflows/test.yml) [![Release](https://img.shields.io/github/v/release/tmux-contrib/tmux-flow)](https://github.com/tmux-contrib/tmux-flow/releases) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Display [Flow](https://flowapp.info/) pomodoro timer status in your tmux status bar.
 
 ## Dependencies
