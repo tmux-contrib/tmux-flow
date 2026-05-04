@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/tmux-contrib/tmux-flow/compare/v0.2.1...v0.2.2) (2026-05-04)
+
+
+### Bug Fixes
+
+* **github:** correct action versions in update.yml ([6427cf2](https://github.com/tmux-contrib/tmux-flow/commit/6427cf2d7eb152820347378bdeaaa9cf4af16ac5))
+
 ## [0.2.1](https://github.com/tmux-contrib/tmux-flow/compare/v0.2.0...v0.2.1) (2026-04-11)
 
 
